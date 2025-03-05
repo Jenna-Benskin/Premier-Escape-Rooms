@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Escape Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Escape Room</h1>
+    </header>
+
+    <section>
+        <h2>Select Your Escape Room</h2>
+        <form id="bookingForm">
+            <label for="room">Choose a Room:</label>
+            <select id="room" name="room">
+                <option value="hostel_dread">Hostel Dread (Max 7 Players)</option>
+                <option value="conspiracy_cure">Conspiracy Cure (Max 8 Players)</option>
+                <option value="foreign_agent">Foreign Agent (Max 6 Players)</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Premier Escape Rooms</p>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
